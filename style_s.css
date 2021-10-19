@@ -1,0 +1,55 @@
+
+
+	#container
+	{		
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;		
+	}	
+	
+	#header
+	{		
+		width: 100%;		
+		overflow: hidden;
+		position: relative;	
+	}	
+		
+	#header img
+	{
+		width: 100%;
+		height: auto;	
+	}	
+
+	.row::after 
+	{
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.nav
+	{		
+		width: 25%;
+		height: 100%;
+		float: left;
+		height: inherit;	
+	}
+	
+	.col-6, col-s-9
+	{
+		float: left;
+		width: 50%;
+	}	
+	
+	#ad
+	{		
+		float: left;
+		width: 25%;		
+	}	
+	
+	#beer, #hh
+	{	   
+	    width: 295px;
+	}
+	

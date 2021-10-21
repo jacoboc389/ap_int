@@ -1,6 +1,4 @@
-
-    
-    html 
+html 
     {
         scroll-behavior: smooth;
     }
@@ -29,7 +27,8 @@
 	body
 	{
 	    /*background-color: #999999;*/
-	    background-image: url("bc1.png");
+	    background-image: url("bc2.png");
+		
 	}
 	
 	
@@ -40,7 +39,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
-		background-color: #2b2b2b;
+		background-color: #e6e6e6;
 		font-family: Arial;
 		border-radius: 50px 50px 50px 50px;		
 	}
@@ -134,7 +133,7 @@
 		height: 100%;
 		float: left;
 		height: inherit;
-		background-color: #2b2b2b;
+		
 		/*box-sizing: initial !important;*/
 		
 	}
@@ -147,23 +146,23 @@
 		
 		
 		border-bottom: 2px dotted #444444;
-		color: white;
+		color: black;
 		/*box-sizing: initial !important;*/
 	}
 	
 	a
 	{
 		text-decoration: none; 
-		color: white;
+		color: #0063b2;
 		box-sizing: initial !important;;
 	}	
 
 	.navL:hover
 	{
-		background-color: #004222;
+		background-color: #0066b7;
 		color: white;
+		text-shadow: 1px 2px 3px #001e36;
 		cursor: pointer;
-		text-shadow: 1px 2px 3px #00bd60;
 	}
 	
 	dl
@@ -269,7 +268,7 @@
 	
 	.footer 
 	{
-		background-color: #004222;
+		background-color: #0066b7;
 		color: #ffffff;
 		text-align: center;
 		font-size: 12px;
@@ -330,11 +329,11 @@
 	    .col-s-6 {width: 50%; float: left; padding: 15px;}
 	    .col-s-7 {width: 58.33%; float: left; padding: 15px;}
 	    .col-s-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-s-9 {width: 100%; border: 1px solid black; /*color: red;*/ float: left; padding: 15px;}
+	    .col-s-9 {width: 100%; border: 1px solid black; color: black; float: left; padding: 15px;}
 	    .col-s-10 {width: 83.33%; float: left;}
 	    .col-s-11 {width: 91.66%; float: left;}
 	    .col-s-12 {width: 100%; border: 1px solid black; padding: 0px; float: left;}
-	    #title {font-size: 255%; text-shadow: 2px 2px 2px black;}
+	    #title {font-size: 375%; text-shadow: 2px 2px 2px black;}
 		.navL {font-size:14px;}
 		
 		.nav {width: 100%; height: 70px;}
@@ -389,11 +388,11 @@
 	    .col-s-6 {width: 50%; float: left; padding: 15px;}
 	    .col-s-7 {width: 58.33%; float: left; padding: 15px;}
 	    .col-s-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-s-9 {width: 100%; border: 1px solid black; /*color: red;*/ float: left; padding: 15px;}
+	    .col-s-9 {width: 100%; border: 1px solid black; color: black; float: left; padding: 15px;}
 	    .col-s-10 {width: 83.33%; float: left;}
 	    .col-s-11 {width: 91.66%; float: left;}
 	    .col-s-12 {width: 100%; border: 1px solid black; padding: 0px; float: left;}
-	    #title {font-size: 355%; text-shadow: 2px 2px 2px black;}
+	    #title {font-size: 375%; text-shadow: 2px 2px 2px black;}
 		/*.navL {font-size:14px;}*/
 	    
 	}
@@ -416,7 +415,7 @@
 	    .col-3 {width: 25%; padding: 0px; float: left; }
 	    .col-4 {width: 33.33%; float: left; padding: 15px;}
 	    .col-5 {width: 41.66%; float: left; padding: 15px;}
-	    .col-6 {width: 60%; border: 1px solid black; /*color: blue;*/ float: left; padding: 15px;}
+	    .col-6 {width: 60%; border: 1px solid black; color: black; float: left; padding: 15px;}
 	    .col-7 {width: 58.33%; float: left; padding: 15px;}
 	    .col-8 {width: 66.66%; float: left; padding: 15px;}
 	    .col-9 {width: 75%; color: #cfcfcf; float: left; padding: 15px;}
@@ -431,54 +430,3 @@
 	   
 	   
 	}
-	
-
-	
-
-	@media only screen and (min-width: 1230px) {
-	    /* For desktop: */
-	    .col-1 {width: 8.33%; float: left; padding: 15px;}
-	    .col-2 {width: 16.66%; float: left; padding: 15px;}
-	    
-		
-		.nav {width: 15%;}
-		dl {display: block;}
-		
-		
-		
-		dl dt:first-child{border-left: 0px;}
-		dt {float: none;}
-		.navL{border-bottom: 1px dotted #444444; width: 100%;}
-		
-		
-	    
-	    #ad {width: 300px; border: 1px solid black;}
-		.footer {width: 1200px; border: 1px solid black;}
-		#header img {width: 1200px;}
-		#container {width: 1200px;}
-		#header {width: 1200px;}
-		
-		
-		
-		
-		
-		/* #content = col-6 col-s-9 */
-		/* #content {width: 575px; border: 1px solid black; background-color: yellow;}  */
-		
-		
-		
-	    .col-3 {width: 25%; padding: 0px; float: left; }
-	    .col-4 {width: 33.33%; float: left; padding: 15px;}
-	    .col-5 {width: 41.66%; float: left; padding: 15px;}
-	    .col-6 {width: 720px; border: 1px solid black; color: #cfcfcf; float: left;}
-	    .col-7 {width: 58.33%; float: left; padding: 15px;}
-	    .col-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-9 {width: 75%; float: left; padding: 15px;}
-	    .col-10 {width: 83.33%; float: left; padding: 15px;}
-	    .col-11 {width: 91.66%; float: left; padding: 15px;} 
-	    .col-12 {width: 100%; float: left; padding: 15px;}
-	    #title {font-size: 500%; text-shadow: 2px 2px 2px black;}
-		.navL {font-size: 18px;}
-	}
-
-    

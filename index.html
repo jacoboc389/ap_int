@@ -1,744 +1,735 @@
-<!DOCTYPE html>
-<html>
-
-	<head>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- <link rel="stylesheet" href="style.css"> -->
-	
-    <style>
-    
-    html 
-    {
-        scroll-behavior: smooth;
-    }
-
-    @font-face
-	{
-			font-family: HeartBreakingBad;
-			src: url("bb.otf");
-	}
-
-	* 
-	{
-	  box-sizing: border-box;
-	}
-	
-	
-	/*@media only screen and (max-width: 600px)
-	{
-		#nav
-		{
-			background-color: lightblue;
-		}
-	}*/
-	
-	
-	body
-	{
-	    /*background-color: #999999;*/
-	    background-image: url("bc1.png");
-	}
-	
-	
-	#container
-	{
-		/*margin: 0px, auto, 0px, auto;*/
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		background-color: #2b2b2b;
-		font-family: Arial;
-		border-radius: 50px 50px 50px 50px;		
-	}
-	
-	
-	#header
-	{
-		border: 1px solid black;
-		/*border-radius: 32px;*/
-		width: 100%;
-		/*float: left;*/		
-		overflow: hidden;
-		position: relative;
-		border-radius: 50px 50px 0px 0px;
-	}
-	
-	#title
-    {
-		color: white;
-        margin-left: auto;
-	    margin-right: auto;
-        text-align: center;
-        top: 8px;
-        left: 16px;
-        position: absolute;
-        
-		cursor: default;
-		font-family: HeartBreakingBad;
-    }
-	
-	#header img
-	{
-		width: 100%;
-		height: auto;
-		transform: scale(1.05); 
-	
-	}
-	
-	.aside
-	{
-	    overflow: hidden;
-	}
-	
-	.aside img:hover
-	{
-	   transform: scale(1.01); 
-	   opacity: 0.85;
-	    
-	}
-	
-	.row::after 
-	{
-		content: "";
-		clear: both;
-		display: table;
-	}
-
-	/*[class*="col-"] 
-	{
-		
-		padding: 15px;
-	}*/
-
-	ul 
-	{
-		list-style-type: none;
-		margin: 0;
-		padding: 25px;
-	}
-
-	.menu li 
-	{
-		  padding: 3px;
-		  margin-bottom: 7px;
-		  background-color: #33b5e5;
-		  color: #ffffff;
-		  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	}
-
-	.menu li:hover 
-	{
-		background-color: #0099cc;
-		cursor: pointer;
-	}
-	
-	.nav
-	{
-		
-		border-bottom: 0px;
-		width: 15%;
-		height: 100%;
-		float: left;
-		height: inherit;
-		background-color: #2b2b2b;
-		/*box-sizing: initial !important;*/
-		
-	}
-	
-	.navL
-	{
-		font-size:18px;
-		
-		padding: 25px;
-		
-		
-		border-bottom: 2px dotted #444444;
-		color: white;
-		/*box-sizing: initial !important;*/
-	}
-	
-	a
-	{
-		text-decoration: none; 
-		color: white;
-		box-sizing: initial !important;;
-	}	
-
-	.navL:hover
-	{
-		background-color: #004222;
-		color: white;
-		cursor: pointer;
-		text-shadow: 1px 2px 3px #00bd60;
-	}
-	
-	dl
-	{
-		margin-top: 0px;
-		box-sizing: initial !important;
-	}
-	
-	.col-6 img 
-	{
-	    max-width: 25%;
-	    height: auto;
-	    
-	}
-	
-	.col-s-9 img 
-	{
-	    max-width: 25%;
-	    height: auto;
-	    
-	}
-	
-	.col-6, .col-s-9
-	{
-	    text-align: justify;
-	}
-	
-	.col-6, .col-s-9 > p
-	{
-	    border-bottom: 1px dotted #b8b8b8;
-	    padding-bottom: 25px;
-	}.na
-	
-	.row
-	{
-	    font-family: Arial;
-	    text-align: left;
-	    background-color: red;
-	}
-	
-	
-	.img_right
-	{
-		float: right;
-		margin: 1px 10px 4px 10px;
-	}
-	
-	.img_left
-	{
-		float: left;
-		margin: 1px 10px 4px 0px;
-	}
-	
-	
-	#content
-	{
-		border: 1px solid black;
-		
-		float: left;
-		color: #cfcfcf;
-		width: 50%;
-		/*width: 75%;
-		float: left;*/
-	}
-	
-	#table_c, tr, td
-	{
-	    border: 1px solid #b8b8b8;    
-	    border-collapse: collapse;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
-	
-	
-	#ad
-	{
-		border: 1px solid black;
-		
-		float: left;
-		width: 25%;
-		
-		/*width: 75%;
-		float: left;*/
-	}
-	
-	
-	#beer, #hh
-	{
-	   
-	    width: 300px;
-	}
-
-	#hh
-	{
-	    margin-bottom: 0px;
-	}
-	
-	#beer
-	{
-	    margin-top: -5px;
-	}
-	
-	
-	.footer 
-	{
-		background-color: #004222;
-		color: #ffffff;
-		text-align: center;
-		font-size: 12px;
-		padding: 15px;
-		border-radius: 0px 0px 50px 50px;
-	}
-
-	
-	
-	.col-6, col-s-9
-	{
-	    color: #cfcfcf;
-	    padding-top: 0px;
-	}
-	
-	
-	
-	
-	
-	/* #footer
-	{
-		border: 1px solid black;
-		
-		clear: both; 
-		/*width: 75%;
-		float: left;
-	} */ 
-
-
-	/* For mobile phones: */
-	[class*="col-"] 
-	{
-		width: 100%;
-	}
-
-	/*.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}*/
-
-    @media only screen and (min-width: 300px) 
-	{
-	    
-	    
-	    .col-s-1 {width: 8.33%; float: left; padding: 15px;}
-	    .col-s-2 {width: 16.66%; float: left; padding: 15px;}
-	    .col-s-3 {width: 25%; float: left; padding: 15px;}
-	    .col-s-4 {width: 33.33%; float: left; padding: 15px;}
-	    .col-s-5 {width: 41.66%; float: left; padding: 15px;}
-	    .col-s-6 {width: 50%; float: left; padding: 15px;}
-	    .col-s-7 {width: 58.33%; float: left; padding: 15px;}
-	    .col-s-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-s-9 {width: 100%; border: 1px solid black; /*color: red;*/ float: left; padding: 15px;}
-	    .col-s-10 {width: 83.33%; float: left;}
-	    .col-s-11 {width: 91.66%; float: left;}
-	    .col-s-12 {width: 100%; border: 1px solid black; padding: 0px; float: left;}
-	    #title {font-size: 375%; text-shadow: 2px 2px 2px black;}
-		.navL {font-size:14px;}
-		
-		.nav {width: 100%; height: 70px;}
-		dl {display: inline-block; height: 70px; width: 20%;}
-		.dl_1:first-child{border-left: 2px dotted #444444; width:100%;}
-		
-		
-		dl{width:100%; height: 70px;}
-		dt {float: left;}
-		.navL{font-size:14px; border-bottom: 0px; border-right: 2px dotted #444444; width: 20%; height: 70px;}
-		.dl_1:last-of-type {border-right: 100px solid black;}
-		
-		#
-		
-		
-		
-    }   
-
-    	
-    	
-    	
-    	
-
-
-	@media only screen and (min-width: 600px) 
-	{
-	    /* For tablets: */
-		
-		 #container {width:100%;}
-    	.nav {width: 100%; height: 70px;}
-		dl {display: inline-block; height: 70px; width: 20%;}
-		.dl_1:first-child{border-left: 2px dotted #444444; width:100%;}
-		
-		dl{width:100%; height: 70px;}
-		dt {float: left;}
-		.navL{font-size:14px; border-bottom: 0px; border-right: 2px dotted #444444; width: 20%; height: 70px;}
-		
-		/*.navL::after 
-		{
-		content: "";
-		clear: both;
-		
-		}*/
-		
-		
-		
-	    .col-s-1 {width: 8.33%; float: left; padding: 15px;}
-	    .col-s-2 {width: 16.66%; float: left; padding: 15px;}
-	    .col-s-3 {width: 25%; float: left; padding: 15px;}
-	    .col-s-4 {width: 33.33%; float: left; padding: 15px;}
-	    .col-s-5 {width: 41.66%; float: left; padding: 15px;}
-	    .col-s-6 {width: 50%; float: left; padding: 15px;}
-	    .col-s-7 {width: 58.33%; float: left; padding: 15px;}
-	    .col-s-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-s-9 {width: 100%; border: 1px solid black; /*color: red;*/ float: left; padding: 15px;}
-	    .col-s-10 {width: 83.33%; float: left;}
-	    .col-s-11 {width: 91.66%; float: left;}
-	    .col-s-12 {width: 100%; border: 1px solid black; padding: 0px; float: left;}
-	    #title {font-size: 375%; text-shadow: 2px 2px 2px black;}
-		/*.navL {font-size:14px;}*/
-	    
-	}
-	
-	@media only screen and (min-width: 768px) {
-	    /* For desktop: */
-	    /*#nav {width: 25%; border: 1px solid black;}*/
-	    
-		.nav {width: 15%;}
-		dl {display: block;}
-		
-		
-		
-		dl dt:first-child{border-left: 0px;}
-		dt {float: none;}		
-		.navL{font-size:16px; width: 100%; border-bottom: 1px dotted #444444; border-right: 0px; display: block;}
-		
-	    .col-1 {width: 8.33%; float: left; padding: 15px;}
-	    .col-2 {width: 16.66%; float: left; padding: 15px;}
-	    .col-3 {width: 25%; padding: 0px; float: left; }
-	    .col-4 {width: 33.33%; float: left; padding: 15px;}
-	    .col-5 {width: 41.66%; float: left; padding: 15px;}
-	    .col-6 {width: 60%; border: 1px solid black; /*color: blue;*/ float: left; padding: 15px;}
-	    .col-7 {width: 58.33%; float: left; padding: 15px;}
-	    .col-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-9 {width: 75%; color: #cfcfcf; float: left; padding: 15px;}
-	    .col-10 {width: 83.33%; float: left; padding: 15px;}
-	    .col-11 {width: 91.66%; float: left; padding: 15px;}
-	    .col-12 {width: 100%; float: left; padding: 15px;}
-	    #title {font-size: 465%; text-shadow: 2px 2px 2px black;}
-		/*.navL {color: red !important;}*/
-		
-		.aside img {width: 100% !important; height: auto;}
-		
-	   
-	   
-	}
-	
-
-	
-
-	@media only screen and (min-width: 1230px) {
-	    /* For desktop: */
-	    .col-1 {width: 8.33%; float: left; padding: 15px;}
-	    .col-2 {width: 16.66%; float: left; padding: 15px;}
-	    
-		
-		.nav {width: 15%;}
-		dl {display: block;}
-		
-		
-		
-		dl dt:first-child{border-left: 0px;}
-		dt {float: none;}
-		.navL{border-bottom: 1px dotted #444444; width: 100%;}
-		
-		
-	    
-	    #ad {width: 300px; border: 1px solid black;}
-		.footer {width: 1200px; border: 1px solid black;}
-		#header img {width: 1200px;}
-		#container {width: 1200px;}
-		#header {width: 1200px;}
-		
-		
-		
-		
-		
-		/* #content = col-6 col-s-9 */
-		/* #content {width: 575px; border: 1px solid black; background-color: yellow;}  */
-		
-		
-		
-	    .col-3 {width: 25%; padding: 0px; float: left; }
-	    .col-4 {width: 33.33%; float: left; padding: 15px;}
-	    .col-5 {width: 41.66%; float: left; padding: 15px;}
-	    .col-6 {width: 720px; border: 1px solid black; color: #cfcfcf; float: left;}
-	    .col-7 {width: 58.33%; float: left; padding: 15px;}
-	    .col-8 {width: 66.66%; float: left; padding: 15px;}
-	    .col-9 {width: 75%; float: left; padding: 15px;}
-	    .col-10 {width: 83.33%; float: left; padding: 15px;}
-	    .col-11 {width: 91.66%; float: left; padding: 15px;} 
-	    .col-12 {width: 100%; float: left; padding: 15px;}
-	    #title {font-size: 500%; text-shadow: 2px 2px 2px black;}
-		.navL {font-size: 18px;}
-	}
-
-    
-	</style>
-	</head>
-	
-	
-	
-	
-	
-	
-	<body>
-	
-	
-	
-	
-	<div id="container">
-	
-	
-	
-	
-	
-
-	<div id="header">
-	
-		<!-- <h3>Hello</h3> -->
-		
-			 
-		<img src="h1.jpg">
-        <h1 id="title">Breaking<br>Bad</h1>   
-	</div>
-
-	<div class="row">
-
-		<div class="nav nav_m">
-
-			<!-- <div class="col-3 col-s-3 col-3-m menu"> -->
-			
-			
-			<dl class="dl_l">
-				<a href="http://www.domenawj.cf/#about"><dt class="navL">Home</dt></a>
-				<a href="http://www.domenawj.cf/#about"><dt class="navL">About</dt></a>
-				<a href="http://www.domenawj.cf/#series"><dt class="navL">Series</dt></a>
-				<a href="http://www.domenawj.cf/#cast"><dt class="navL">Cast</dt></a>
-				<a href="http://www.domenawj.cf/#gallery"><dt class="navL">Gallery</dt>	</a>			
-				
-			</dl>	
-			
-			
-			
-			
-			
-			
-		    <!--     </div> -->
-
-        
-
-
-			<!-- <h3>World</h3>
-			
-			<dl>
-			
-				<dt>This</dt>
-				<dt>Is</dt>
-				<dt>My</dt>
-				<dt>List</dt>
-			
-			
-			</dl> -->
-			
-			
-
+<!DOCTYPE HTML>
+<html lang="pl"> 
+<head> 
+	<meta charset="utf-8"/>	
+	<title>My Google Map</title>		
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHKn8xCN9J4IXi_z_e26C5nU8WhmLlGyM"></script>
+</head>
+<body>	
+	<div class="container">
+		<h1>My Google Map</h1>
+		<div id="map">	
 		</div>
-		
-		<!-- <div id="content">
+		<script>		
+			let map, infoWindow;			
+			var generated_puzzle = false;
+			var puzzle_finished = false;
+			function initMap() 
+			{
+				map = new google.maps.Map(document.getElementById("map"), 
+				{
+					center: { lat: 40.730610, lng: -73.935242 },
+					zoom: 6,
+				});	
+				
+				infoWindow = new google.maps.InfoWindow();			  
+				const locationButton = document.getElementById("get_location_button");				
+				const set_locationButton = document.getElementById("set_location_button");				
+				var my_lat = document.getElementById("set_lat");
+				var my_lng = document.getElementById("set_lng");			  
+				locationButton.addEventListener("click", () => 
+				{							
+					if (navigator.geolocation) 
+					{
+					  navigator.geolocation.getCurrentPosition
+					  (
+						(position) => {
+						  const pos = {
+							lat: position.coords.latitude,
+							lng: position.coords.longitude,
+						  };	
+						console.log(pos);
+						  infoWindow.setPosition(pos);
+						  infoWindow.setContent("You are here ! -> " + pos['lat'] + ", " + pos['lng']);
+						  infoWindow.open(map);
+						  map.setCenter(pos);						  
+						},
+						() => {
+						  handleLocationError(true, infoWindow, map.getCenter());
+						}
+					  ); 				  
+					}
+					else
+					{					  
+					  handleLocationError(false, infoWindow, map.getCenter());
+					}												
+				});						
+				
+				set_locationButton.addEventListener("click", () => 
+				{
+					if(!my_lat.value || !my_lng.value)
+					{
+						alert("Nie podano lokalizacji !");
+						return 0;
+					}			
+					// Try HTML5 geolocation.				
+					//if (navigator.geolocation) 
+					//{
+					//  navigator.geolocation.getCurrentPosition
+					 // (
+					//	(position) => {
+						  const pos = {
+							lat: parseFloat(my_lat.value),
+							lng: parseFloat(my_lng.value),
+						  };
+						  
+						console.log(pos);
+						  infoWindow.setPosition(pos);
+						  infoWindow.setContent("This is location, you asked me for -> " + pos['lat'] + ", " + pos['lng']);				  
+						  
+						  infoWindow.open(map);
+						  map.setCenter(pos);
+						  
+						//},
+						//() => {
+						//  handleLocationError(true, infoWindow, map.getCenter());
+						//}
+					  //);
+					//}
+					//else
+					//{
+					  // Browser doesn't support Geolocation
+					//  handleLocationError(false, infoWindow, map.getCenter());
+					//}*/
+					
+					//console.log(my_lat.value);
+					//console.log(my_lng.value);
+					
+					//console.log(pos);
+					//console.log(my_lng.value);				
+				});						
+		  
+				/*infoWindow = new google.maps.InfoWindow();
+				const locationButton = document.createElement("button");
+				locationButton.textContent = "Pan to Current Location";				  
+				locationButton.classList.add("custom-map-control-button");			  
+				map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);				
+				locationButton.addEventListener("click", () => 
+				{
+					// Try HTML5 geolocation.				
+					if (navigator.geolocation) 
+					{
+					  navigator.geolocation.getCurrentPosition
+					  (
+						(position) => {
+						  const pos = {
+							lat: position.coords.latitude,
+							lng: position.coords.longitude,
+						  };
 
-			<h3>World</h3>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat nibh, sollicitudin suscipit sem eget, laoreet cursus mi. Duis faucibus lectus vel urna finibus, non egestas neque eleifend. Pellentesque ut orci vestibulum, malesuada nulla ac, maximus tortor. Aenean vel commodo lorem. Fusce ultricies, purus eget porttitor pellentesque, nisl velit varius odio, at rhoncus sapien nisi ac ipsum. Duis vitae enim sit amet risus volutpat elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras velit orci, commodo ut enim quis, luctus tristique magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In erat nibh, sollicitudin suscipit sem eget, laoreet cursus mi. Duis faucibus lectus vel urna finibus, non egestas neque eleifend. Pellentesque ut orci vestibulum, malesuada nulla ac, maximus tortor. Aenean vel commodo lorem. Fusce ultricies, purus eget porttitor pellentesque, nisl velit varius odio, at rhoncus sapien nisi ac ipsum. Duis vitae enim sit amet risus volutpat elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras velit orci, commodo ut enim quis, luctus tristique magna.
-
-		</div> -->
-		
-		
-		
-		<div class="col-6 col-s-9">
+						  infoWindow.setPosition(pos);
+						  infoWindow.setContent("Location found.");
+						  infoWindow.open(map);
+						  map.setCenter(pos);						  
+						},
+						() => {
+						  handleLocationError(true, infoWindow, map.getCenter());
+						}
+					  );
+					}
+					else
+					{
+					  // Browser doesn't support Geolocation
+					  handleLocationError(false, infoWindow, map.getCenter());
+					}
+				});*/
+			}					
+						
+			//const locationButton = document.createElement("button");	
+			//locationButton.textContent = "Pan to Current Location";			
 			
-			<h3>DRAMA</h3>
+			/*function center_map_at_my_location()
+			{
+				var lat_ = document.getElementById("lat");
+				var lng_ = document.getElementById("lng");					
+					
+					//var options = {
+					//	zoom: 14,
+					//	center: {lat:lat_,lng:lng_}			
+					//}			
 			
-				<p>Breaking Bad follows protagonist Walter White (Bryan Cranston), a chemistry teacher who lives in New Mexico with his wife (Anna Gunn) and teenage son (RJ Mitte) who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prognosis, and a desire to secure his family's financial security, White chooses to enter a dangerous world of drugs and crime and ascends to power in the world. The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints of normal society and follows his transformation from mild family man to a kingpin of the drug trade.</p>
-		
-		<h3>CREATOR</h3>
-		
-		<p>Vince Gilligan</p>
+				//var map = new google.maps.Map(document.getElementById('map'), options);
+						
+					//alert('Hey!');				
+										
+					//alert('lat = ' + lat + ", lng = " + lng);
+					//alert(lat_.value);
+				
+				console.log(lat_.value);
+				console.log(lng_.value);				
+				
+				//var lat__ = lat_.value;
+				//var lng__ = lng_.value;		
+				
+					//var map = new google.maps.Map(document.getElementById('map'), options);
+					//var map = new google.maps.Map(document.getElementById('map'), options);
+					//map.setCenter({lat: lat_, lng: lng_});
+					//map.setCenter({lat: 53.452541, lng: 14.538135}); 				
+			}*/
+			
+					// My loc : 53.2347		14.9194
+			
+			
+					/*const locForm = document.querySelector('.location_form');						
+					locForm.addEventListener('submit', function(event)
+					{ 
+						alert('submit form');				
+					});*/			
+					
+			function Export() 
+			{
+				html2canvas($("#map"), {
+					useCORS: true,
+					onrendered: function (canvas) {
+						$("#imgMap").attr("src", canvas.toDataURL("image/png"));
+						$("#imgMap").show();
+					}
+				});				
+				
+				var split_picture_button = document.getElementById("generate_puzzle_button");
+				split_picture_button.setAttribute("style","display: default;");
+				//split_picture_button.innerHTML = "Wygeneruj puzzle";
+				//plit_picture_button.setAttribute("onclick","generate_puzzle()");
+				//document.body.appendChild(split_picture_button);
+				test_span.appendChild(split_picture_button);
+				
+				//imgMap.setAttribute("style","clear: both;");
+				imgMap.setAttribute("style","float: left;");				
+				
+				const selectElement = document.querySelector('#my_span_');							
+			}			
+			
+			function generate_puzzle()
+			{ 
+			    if(generated_puzzle == true)
+				{
+					alert("Puzzle zostały juz wygenerowane !");
+					return 0;
+				}
+				
+				var puzzle_div = document.getElementById("puzzle_div");
+				var exported_image = document.getElementById("imgMap");				
+				var exported_picture_src = exported_image.getAttribute("src");				
+				console.log(exported_picture_src);				
+				var puzzle_area = document.getElementById("text");				
+				puzzle_area.setAttribute("style","display: block;");		
+				
+				var img = exported_image;		
+				img.cross0rigin = "Anonymous";
+				img.onload = function()
+				{
+					var canvas = document.createElement('canvas');
+					var ctx = canvas.getContext('2d');
+					canvas.height = this.naturalHeight;
+					canvas.width = this.naturalWidth;
+					
+					ctx.drawImage(this,0,0);
+					var data = canvas.toDataURL('image');
+					document.getElementById("result").value = data;			
+				}
+				
+				var canvas = document.createElement("canvas"),
+					ctx = canvas.getContext('2d'),
+					parts = [],
+					img = new Image();
+					
+				img.onload = split_4;
+				
+				var my_div = document.createElement('div');
+				my_div.id = "images";
+				
+				function split_4()
+				{
+					var w2 = img.width / 4,
+						h2 = img.height /4;
+						
+					var y = 0;
+						
+					var img_array = [];		
+						
+					for(var i=0; i<16; i++)
+					{					    
+						var x = (-w2*i) % (w2*4);
+						
+						if((i == 0) || (i == 1) || (i == 2) || (i == 3))
+						{
+							y = 0;
+						}						
+						if((i == 4) || (i == 5) || (i == 6) || (i == 7))
+						{
+							y = -h2 * 1;
+						}						
+						if((i == 8) || (i == 9) || (i == 10) || (i == 11))
+						{
+							y = -h2 * 2; 
+						}						
+						if((i == 12) || (i == 13) || (i == 14) || (i == 15))
+						{
+							y = -h2 * 3;
+						}						
+							
+						console.log(x, y);						
+						
+						canvas.width = w2;
+						canvas.height = h2;
+						
+						ctx.drawImage(this, x, y, w2*4, h2*4);
+						
+						parts.push( canvas.toDataURL() );								
+						var slicedImage = document.createElement('img');
+						slicedImage.src = parts[i];						
+						slicedImage.id = "drag"+(i+1);					
+						slicedImage.draggable = true;
+						slicedImage.setAttribute("ondragstart", "drag(event)");						
+						var div = document.getElementById("images");			
+						img_array[i] = slicedImage;
+						console.log(img_array[i]);
+					}	
+					var div = document.getElementById("images");
+					min = Math.ceil(0);
+					max = Math.floor(15);	
+					var arr = [];
+					while(arr.length < 16)
+					{
+						var r = Math.floor(Math.random() * (max - min+1));
+						if(arr.indexOf(r) === -1) arr.push(r);
+					}
+					console.log(arr[0]);
 
-		<h3>STARRING</h3>
+					var number = 0;
+					var slicedImage;
+					
+					min = Math.ceil(0);
+					max = Math.floor(15);	
+
+					/*for(var i=0; i<16; i++)
+					{
+						console.log("arr[", i , "] = ", arr[i]);
+					}*/			
+					
+					for(var i=0; i<16; i++)
+					{
+						number = arr[i];
+						//console.log("number", number);
+					}
+
+					for(var i=0; i<16; i++)
+					{
+						/*min = Math.ceil(1);
+						max = Math.floor(16);*/						
+						//console.log(Math.floor(Math.random() * (max - min+1))+min);*/						
+						//console.log(arr[i]);								
+						number = arr[i];
+						//console.log("number", number);										
+					    //console.log("number = ", number);					    
+						slicedImage = img_array[number];					
+						div.appendChild(slicedImage);		
+					}						
+					//console.log(parts);				
+				}
+				
+			// ! convert img to base64 -> 
+			
+			img.src = exported_picture_src;
+			
+			
+			/*img.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAABQCAYAAAD/YAtfAAAD6klEQVR4nO3c6Y0jIRCGYWdCKIRCKIRCKIRCKLU/dlxdzdDQF7ZHfkt6pB3uktbfzmqPhzxEAEAeIo93PwDA5yAQACgCAYAiEAAoAgGAIhAAKAIBgCIQACgCAYAiEAAoAgGAIhAAKAIBgCIQACgCAYAiEAAoAgGAIhAAKAIBgCIQACgCAYAiEAAoAgGAIhAAKAIBgCIQACgCAYAiEAAoAgGAIhAAKAJhJiciSUSK/K8iIuHA/vRzxrv7OMOLSJal8s/Yu9+FLgJhFidLENSVduxPZn0YrI2yDp345t7DRt+jXj6tjy9EIMxSZKki6w+4yPiDYfe6ztos7Spv6ttX70iN3v0f6ONLEQgzBFkq7xi3vKzLd+5JZl2R9W9PRPZ9J3I3+6ZoxmPnXZ/Yx5ciEGbwsvyEdtWcrdbebOZj5w5XneUG46/y7Lu+276r/IE+vhSBMJOvvnayrnp9MHN5cLZdm6q5ZObCi3vu9dea+9Q+vhSB8EpBliqN+WLm/eCsZNaGzj1px7tsZTOeq7k9Pdo9tge/ccedfeAyAuFVnKw/8LGaj2Yuyf8PkO+cZ89yjbueVXa8rS63Mb6nz2DW55+znKyDIkzqA5cRCK+SZV2umi9mzv44N9bW6+t5V501eluU3x/YUL0hHug1ynbV59zZBy4jEF4hyrpiNe+lX7lxpq3WnaP5mqvuS+Zrd7BfJ+0/RsyNs+7uA5cQCLN5WVdurInVmiTjv7dgq3XvaL6lvvP5lqM9l6rfbL4uL+gDpxEIsxVZl2usyWY+mfFkxnO1x1br3tF8i5Pf1XpvT9jRS5zcB04jEGaKsq6wsa6YNd6MezNeOntcNec6+0ay2ZtP9Gz3b/Viz53VB04hEGZxsq7UWWtr71wx465zd7nw5tbZI0d7mdEHTiMQZkmyVBmstbV3zp4fqrlg5tKBN0f5XfFg30d7mdEHTiMQZrHlB2vLxlpvxku1J5q5VM0lMxd3vteZPVnW3/q7A30f7eXuPnAJgTBDkKXyjvXJrE87xh9y/78BiGZPqHqIB3q352z1Ys+7uw9cQiDMkGWpLMsfI1rRrHeyrizjv8j0kPv+lWCs7nqO26rfvOVML3f1gcsIhBn2lt0TOuti566ysafI/l9VbSUzngZv3tLrJUzsA5cRCDMU2Vf1Pi/n/tuxaO4scvy/XrNl7/M73rzlTC9X+8BlBAIARSAAUAQCAEUgAFAEAgBFIABQBAIARSAAUAQCAEUgAFAEAgBFIABQBAIARSAAUAQCAEUgAFAEAgBFIABQBAIARSAAUAQCAEUgAFAEAgBFIABQBAIARSAAUAQCAEUgAFAEAgD1DxOuXDVQeFT8AAAAAElFTkSuQmCC"; */		
+				
+			/*var w2 = img.width / 4,
+			h2 = img.height /4;
+				
+			for(var i=0; i<16; i++)
+			{
+				var x = (-w2*i) % (w2*4),
+					y = (h2*i)<=h2? 0: -h2;
+					
+					//console.log(x, y);
+				
+				canvas.width = w2;
+				canvas.height = h2;
+				
+				ctx.drawImage(this, x, y, w2*4, h2*4);
+				
+				parts.push( canvas.toDataURL() );				
+				//console.log(parts);
+				
+				// for test div :
+				
+				var slicedImage = document.createElement('img');
+				slicedImage.src = parts[i];
+				
+				//var div_image_child = document.createElement('div');
+				slicedImage.id = "drag"+(i+4);
+				
+				
+				slicedImage.draggable = true;
+				slicedImage.setAttribute("ondragstart", "drag(event)");
+				//div_image_child.style.backgroundImage = "url('desktop0.png')";				
+				
+				//div_image_child.appendChild(slicedImage);				
+				
+				//var div = document.getElementById("test"+i);
+				var div = document.getElementById("images");
+				div.appendChild(slicedImage);			
+			}	*/
+			
+				generated_puzzle = true;
+				
+				/*console.log("generate puzzle function ! ");
+					var div_container = document.getElementById("puzzle_div");	
+				var my_span = document.createElement("span");	
+				//my_span.setAttribute("style","display: none;");
+				my_span.setAttribute("id","my_span_");
+				my_span.innerHTML = "spen - hey";
+				div_container.appendChild(my_span);
+				console.log("end generate puzzle function ! ");				    
+					
+				const selectElement = document.querySelector('#my_span_');	
+				selectElement.addEventListener('change', (event) => {				
+					alert("change - asdasd!");				
+					const result = document.querySelector('#my_span_');
+					result.textContent = 'asdasd';
+				});*/							
+
+				//detect_finished_board();
+				
+			}
+			
+			// wykrycie ułożenia planczy : 
+			
+			//var my_input = document.getElementById("myInput");
+			//my_input.value="True";
+			
+			
+			
+			//var wszystko_ok = true;
+			var wszystko_ok = true;
+			
+			function detect_finished_board()
+			{
+				//alert("hey!");
+				
+				wszystko_ok = true;			
+				
+				var div_child_id_ ;
+				var div_images = document.getElementById("text");				
+				//console.log("d ch length = ", div_images.childElementCount);
+				
+				for(var i=1; i<16; i++)
+				{
+					var div_img = document.getElementById("div"+i);	
+					
+					console.log("div id = ", div_img.id);
+					
+					var div_child = div_img.querySelector("#drag"+i);
+						
+					//console.log(div_child);					
+					
+					if(!div_child)
+					{
+						//console.log("div child id = ", div_child.id);
+						
+						//console.log("źle !");
+						wszystko_ok = false;
+					}
+					
+					//div_child_id_ = div_child.id;					
+				
+					/*if(div_child_id_ != "#drag"+i)
+					{
+						wszystko_ok = false;
+						alert("div" + i + " posiada złe dziecko ! ");
+					}*/
+					//console.log(div_child.children[0].id);					
+					//var div_img_child = div_img.children; 
+					//var div_child = div_img.querySelector("#drag1");					
+					//console.log(div_img.id);
+					//console.log(div_child.children.id);					
+				}
+				
+				var my_span = document.getElementById("my_span_");	
+				
+				if(!wszystko_ok)
+				{
+					console.log("Źle!");
+					//alert("Dobrze !");
+					//my_span.innerHTML = "bad";
+				}
+				else
+				{	
+					if(puzzle_finished)
+					{
+						return 0;
+					}
+					console.log("Dobrze!");
+					alert("Dobrze !");
+					//my_span.innerHTML = "good";
+					
+					//Powiadomienie - po tym jak plansza zostałą ułożona ! 
+					
+					/*showNotification();
+					
+					function showNotification()
+					{
+						const notification = new Notification("New message from me!", {		
+							body: "This is the notification message !"		
+						});
+						
+						alert("Powiadomienie - Dobrze ułożono planszę! ");	
+					}*/
+					
+					
+					if(window.Notification && Notification.permission !== "denied") {
+					Notification.requestPermission(function(status) 
+					{  // status is "granted", if accepted by user
+							var n = new Notification('Title', { 
+								body: 'Powiadomienie - Dobrze ułożone planszę !'
+								
+							}); 
+						});
+					}
+									
+					
+					
+					
+
+					/*console.log(Notification.permission);
+
+
+					if(Notification.permission === "granted")
+					{
+						//alert("We have permissions!");
+						showNotification();
+					}
+					else if(Notification.permission !== "denied")
+					{
+						Notification.requestPermission().then(permission => {
+							//console.log(permission);
+							if(permission === "granted")
+							{
+								showNotification();
+							}				
+						
+						});
+						
+					}	*/
+					
+					puzzle_finished = true;
+					
+				
+				}		
+				
+				/*if(my_span.innerHTML == "bad")
+				{
+					console.log("wnetrze mojego spana to -> bad!");
+				}*/				
+				
+				/*if(div_images.children.length != 16)
+				{
+					alert("Układanka nie zawiera wszystkich 16 puzzli! ");
+					return 0;
+				}
+				
+				var div = document.getElementById("div1");			
+				
+				var div_child = div.querySelector("#drag1");
+				
+				for (let i = 0; i < div.children.length; i++) 
+				{
+				  console.log(div.children[i].id);
+				}*/
+				//div_images.appendChild(my_span);			
+			}
+			
+			//let button = document.getElementById("pressme");				
+				
+			/*wszystko_ok.addEventListener("change", function() 
+			{
+				alert("zmiana!");
+				if(wszystko_ok == false)
+				{
+					alert("nie!");
+				}
+				if(wszystko_ok == true)
+				{			
+						
+					alert("tak!");
+				}
+			});
+			
+			function load() 
+			{
+				 var el = document.getElementById("t");
+				 el.addEventListener("click", modifyText, false);
+			}*/
+					
+			/*const selectElement = document.getElementById('ice-cream');
+
+			selectElement.addEventListener('change', (event) => 
+			{
+				const result = document.querySelector('.result');
+				result.textContent = `You like ${event.target.value}`;
+				
+				console.log("zmiana");
+				
+			});*/		
+					
+			/*function validate_span()
+			{
+				var my_span = document.getElementById("my_span_");
 	
-		<p id="about">	Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris,	Betsy Brandt, RJ Mitte, Bob Odenkirk, Giancarlo Esposito, Jonathan Banks  </p>
+				console.log("my span = ", my_span);
+				
+				if(my_span.innerHTML == "bad")
+				{
+					console.log("wnetrze mojego spana to -> bad!");
+				}
+				
+			}*/			
 			
-		<h3 >ABOUT <a href="http://www.domenawj.cf/#container">▲</a></h3>
-			
-			<p>Breaking Bad is an American neo-Western crime drama television series created and produced by Vince Gilligan. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes. It was set and filmed in Albuquerque, New Mexico, and tells the story of Walter White (Bryan Cranston), an underpaid, overqualified, and dispirited high school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime, partnering with his former student Jesse Pinkman (Aaron Paul), by producing and distributing crystal meth to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. According to Gilligan, the title is a Southern colloquialism meaning "to raise hell".</p>
-			
-			<p>Among the show's co-stars are Anna Gunn and RJ Mitte as Walter's wife Skyler and son Walter Jr., and Betsy Brandt and Dean Norris as Skyler's sister Marie Schrader and her husband Hank, a DEA agent. Others include Bob Odenkirk as White's and Pinkman's sleazy lawyer Saul Goodman, Jonathan Banks as private investigator and fixer Mike Ehrmantraut, and Giancarlo Esposito as drug kingpin Gus Fring. The final season introduces <span id="series"></span>Jesse Plemons as the criminally ambitious Todd Alquist, and Laura Fraser as Lydia Rodarte-Quayle, a cunning business executive secretly managing Walter's global meth sales for her company.</p>			
-			
-		<h3 >SERIES <a href="http://www.domenawj.cf/#container">▲</a></h3>
-		
-			<p>Breaking Bad premiered on the same night as both the NFC and AFC Championships in the 2008 NFL playoffs, an intentional decision by AMC hoping to capture the adult male viewership immediately following the planned end of the NFC game. However, the game ran over its time slot, cutting into Breaking Bad's timeslot in most of America. As a result, the pilot had only about 1.4 million viewers. Coupled with the ongoing writers strike, the first season did not draw as large of a viewership as they expected. However, with subsequent seasons, viewership increased, avoiding the usual trend of downward viewership that most serialized shows had. Ratings further increased by the fourth season as, prior to airing, the previous seasons had been added to Netflix, boosting interest in the show. Breaking Bad is considered the first such show to have a renewed burst of interest due to the show being made available on Netflix. The second half of the final season saw record viewership, with the series finale reaching over 10.3 million viewers.</p>		
-		
-			<table id="table_c">
-				<tbody><tr>
-					<td rowspan="3">Season</td>
-					<td rowspan="3">Episodes</td>
-					<td colspan="3">Orginally aired</td>							
-				</tr><tr>
-				</tr><tr>
-					<td>First aired</td>
-					<td>Last aired</td>
-					<td>Network</td>									
-				</tr><tr>
-				</tr><tr>
-					<td>1</td>
-					<td>7</td>
-					<td>January 20, 2008</td>									
-					<td>March 9, 2008</td>									
-					<td rowspan="9">AMC</td>									
-				</tr><tr>				
-				</tr><tr>
-					<td>2</td>
-					<td>13</td>
-					<td>March 8, 2009</td>									
-					<td>May 31, 2009</td>												
-				</tr><tr>
-				</tr><tr>
-					<td>3</td>
-					<td>13</td>
-					<td>March 21, 2010</td>									
-					<td>June 13, 2010</td>																	
-				</tr><tr>
-				</tr><tr>
-					<td>4</td>
-					<td>13</td>
-					<td>July 17, 2011</td>									
-					<td>October 9, 2011</td>														
-				</tr><tr>
-				</tr><tr>
-					<td>5</td>
-					<td>16</td>
-					<td>July 15, 2012</td>									
-					<td>September 2, 2012</td>														
-				</tr><tr>			
-			</tr></tbody></table>		
-			
-		<h3 id="cast">CAST <a href="http://www.domenawj.cf/#container">▲</a></h3>				
-	
-		<img class="img_left" src="bryan.jpg">
-		
-		<p>Bryan Lee Cranston (born March 7, 1956) is an American actor, director, producer, and screenwriter. He is best known for his roles as Hal in the Fox sitcom Malcolm in the Middle (2000–2006), Walter White in the AMC crime drama series Breaking Bad (2008–2013), and Dr. Tim Whatley in the NBC sitcom Seinfeld (1994–1997). Cranston's performance on Breaking Bad earned him the Primetime Emmy Award for Outstanding Lead Actor in a Drama Series four times (2008, 2009, 2010, and 2014). After becoming a producer of the show in 2011, he also won the award for Outstanding Drama Series twice. Breaking Bad also earned Cranston five Golden Globe nominations (with one win) and nine Screen Actors Guild Award nominations (with four wins). He was previously nominated three times for the Outstanding Supporting Actor in a Comedy Series for his role in Malcolm in the Middle. Cranston co-developed and occasionally appeared in the crime drama series Sneaky Pete (2015–2019) and served as a director for episodes of Malcolm in the Middle, Breaking Bad, Modern Family, and The Office.</p>
-		
-		<img class="img_right" src="anna.jpg">
-		
-		<p>Anna Gunn (born August 11, 1968) is an American actress. She is best known for her role as Skyler White on the AMC drama series Breaking Bad (2008–2013), for which she won the Primetime Emmy Award for Outstanding Supporting Actress in a Drama Series in 2013 and 2014, Jean Ward in The Practice (1997-2002), and Martha Bullock in Deadwood (2004-2006). Gunn was born in Cleveland, Ohio, but moved at an early age and was raised in Santa Fe, New Mexico, the daughter of Sharon Anna Kathryn "Shana" Gunn (née Peters), an interior designer, and Clemens Earl Gunn Jr., who worked in real estate. She graduated from Santa Fe Preparatory School in 1986. She attended Northwestern University, where she majored in theater and graduated in 1990. During fall of 1988, Gunn spent a semester abroad to study at the British American Drama Academy. After moving to Laurel Canyon, Los Angeles, she shared a house with Pamela Adlon.</p>
-		
-		<img class="img_left" src="dean.jpg">
-		
-		<p>Dean Joseph Norris (born April 8, 1963) is an American actor. He is well known for playing DEA agent Hank Schrader on the AMC series Breaking Bad (2008–2013), for which he received critical acclaim, as well as State Trooper McCleary in Little Miss Sunshine (2006). He also portrayed town councilman James "Big Jim" Rennie on the CBS series Under the Dome (2013–2015) and currently plays mob boss Clay "Uncle Daddy" Husser on the TNT series Claws. He reprised his role as Hank Schrader in the fifth season of the Breaking Bad spin-off Better Call Saul (2020). Throughout his career Norris has acted in nearly 50 movies, and more than 100 different TV shows.</p>
-		
-		<img class="img_right" src="aaron.jpg">
-		
-		<p>Aaron Paul Sturtevant (born August 27, 1979), known professionally as Aaron Paul, is an American actor and producer. He is best known for portraying Jesse Pinkman in the AMC series Breaking Bad (2008–2013), for which he won several awards, including the Critics' Choice Television Award for Best Supporting Actor in a Drama Series (2014), Satellite Award for Best Supporting Actor – Series, Miniseries, or Television Film (2013), and Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series. This made him one of only two actors to win the latter category three times (2010, 2012, 2014), since its separation into comedy and drama. He has also won the Saturn Award for Best Supporting Actor on Television three times (2009, 2011, 2013), more than any other actor in that category. He reprised the role of Jesse Pinkman six years after the end of the series in the 2019 Netflix film El Camino: A Breaking Bad Movie, earning further critical acclaim. Paul began his career with roles in several music videos, guest roles in television, and minor roles in films. In 2007, he had a recurring role as Scott Quittman on the HBO series Big Love (2006–2011). Following Breaking Bad, he starred in films such as Need for Speed (2014), Exodus: Gods and Kings (2014), Eye in the Sky (2015), and Central Intelligence (2016).</p>
-		
-		<img class="img_left" src="krysten.jpg">
-		
-		<p>Krysten Ritter is an American actress who played Jane Margolis on Breaking Bad and El Camino: A Breaking Bad Movie. She also played the lead role of Chloe (the "Bitch") in Don't Trust the B---- in Apartment 23 and the titular role in Jessica Jones. Her most famous role is Jessica Jones in the Netflix drama series Jessica Jones (2015–2019) and the miniseries The Defenders (2017).</p>
-		
-		<img class="img_right" src="gus.jpg">
-		
-		<p>Giancarlo Giuseppe Alessandro Esposito (Italian pronunciation: dʒaŋˈkarlo dʒuˈzɛppe alesˈsandro eˈspɔːzito; born April 26, 1958) is an American actor. He is best known for portraying Gus Fring in the AMC crime drama series Breaking Bad (2009–2011) and the prequel series Better Call Saul (2017–present). For his performance he won the Critics' Choice Television Award for Best Supporting Actor in a Drama Series and earned three nominations for the Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series.
+			function allowDrop(ev)
+			{
+				ev.preventDefault();
+			}
 
-Esposito's other television roles include Federal Agent Mike Giardello in the NBC police drama series Homicide: Life on the Street (1998–1999), Sidney Glass / Magic Mirror in the ABC supernatural drama series Once Upon a Time (2011–2017), Tom Neville in the NBC science fiction series Revolution (2012–2014), Dr. Edward Ruskins in the Netflix comedy-drama series Dear White People (2017–present), Stan Edgar in the Amazon Prime Video superhero drama series The Boys (2019–present), and Moff Gideon in the Disney+ space western drama series The Mandalorian (2019–present), the lattermost of which earned him two Primetime Emmy Award nominations. He also portrayed American Baptist pastor and politician Adam Clayton Powell Jr. in the TV series Godfather of Harlem (2019–present). Esposito also portrays Antón Castillo, the main antagonist of the video game Far Cry 6, released in 2021.</p>
-		
-		<!-- <h4>1</h4> -->		
-		
+			function drag(ev) 
+			{
+				ev.dataTransfer.setData("text", ev.target.id);
+			}
+
+			function drop(ev)
+			{
+				ev.preventDefault();
+				var data = ev.dataTransfer.getData("text");				
 				
+				//console.log(ev.firstChild.name);				
+				//alert(ev.firstChild.nodeName)			
 				
-				
-				
-				
-				
-				
-				
+				if(ev.firstChild)
+				{
+					alert("zajety kafelek!");
+				}
+				else
+				{
+					ev.target.appendChild(document.getElementById(data));
+				}				
+			}			
+			
+			/*function validate_span()
+			{			
+				var my_span = document.getElementById("my_span_");
+				console.log("validate_span, my span = ", my_span);
+
+				//alert("funkcja V S!");
+			}*/			
+			
+			/*if(my_span.innerHTML == "bad")
+			{
+				console.log("wnetrze mojego spana to -> bad!");
+			}*/	
+			
+			//window.onload = validate_span;			
+			
+			var text_div = document.getElementById("text");
+			
+			//text_div.onmouseover = detect_finished_board;
+			
+			/*text_div.addEventListener("mouseover", function( event ) {
+			
+				console.log("najechano na to gówno");
+			
+			});*/
+			
+			/*text_div.addEventListener("mouseover", function( event ) {
+			
+				var my_input = document.getElementById("myInput");
+				my_input.setAttribute("style","display: none;");		
+			
+			  // highlight the mouseover target
+			  event.target.style.background = "orange";
+
+			  // reset the color after a short delay
+			  setTimeout(function() {
+				event.target.style.color = "";
+			  }, 500);
+			}, false);*/
+							
+		</script>		
+		<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHKn8xCN9J4IXi_z_e26C5nU8WhmLlGyM&callback=initMap">
+			<!-- parameter: initMap - It wants to load initMap -->		
+		</script>
+		<!-- <form id="action="zaloguj.php" method="post"> -->			
+		<!-- <form class="location_form"> 		
+			<br><br>Podaj lokalizację:			
+				<input type="text" id="lat"/>				
+				<input type="text" id="lng"/>		-->				
+				<!-- <button onclick="hey()">OK</button><br> -->			
+			<!--<button type="submit" id="location_form_button">OK</button>	 -->						
+			<!-- <button onclick="hey()" class="button">OK</button> -->
+				<!-- <button type="submit" class="ok_button">OK</button>	-->					
+		<!--</form>	
+		<button onclick="center_map_at_my_location()" class="button">OK</button>  -->			
+		<!-- <input type="submit" value="Zaloguj sie" />	-->
+		<!-- </form>  -->			
+		<!--  <input type="text" id="myInput" placeholder="Kod"> -->		 
+		<!--<br><br><input type="text" id="my_input">-->		
+		<!-- <button onclick="my_func()" id="my_input">Moja funkcja</button> -->		
+		<div style="color: white;">
+		<br><br>Podaj lokalizację:			
+				<input type="text" id="set_lat" placeholder="szerokość (N)" />				
+				<input type="text" id="set_lng" placeholder="długość (W)"/>		
+		<button id="set_location_button">Ustaw tą lokalizację</button>	</div>		
+		<div id="show_my_loc">
+		<br><button id="get_location_button">Pokaż moją lokalizację</button>		
+		<input type="button" id="btnExport" value="Export" onclick="Export()"/> 
+		<span id="test_span">
+			<button id="generate_puzzle_button" onclick="generate_puzzle()" style="display: none;">Wygeneruj puzzle</button>		
+			<!-- <button id="pressme" style="display: default" onclick="detect_finished_board()" style="display: none;">Sprawdź poprawność</button>		-->
+		</span>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<!-- <div id="ad">
-
-			<h3>World</h3>
-
-		</div> -->
-		
-		<div class="col-3 col-s-12 col-3-m">
-			<div class="aside">
-			    <a href="https://warszawa.naszemiasto.pl/happy-hours-warszawa-w-tych-miejscach-kupisz-jedzenie-i/ar/c11-4967470"><img id="hh" src="hh.jpg"></a>
-			    <a href="https://www.tripadvisor.com/Tourism-g294255-Palawan_Island_Palawan_Province_Mimaropa-Vacations.html"><img id="beer" src="island.jpg"></a>
-			   
-			</div>
-		</div>
-		
+    </div>
+	<img id="imgMap" src="" alt="" style="display: none" /> 
+	<div id="puzzle_div">		
+	</div>	
+	<div id="images">	 
 	</div>
-		
+	<div id="text" onmouseover="detect_finished_board()">
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<div id="div16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>	
+	<!-- <label>Choose an ice cream flavor:
+	    <select id="ice-cream" name="ice-cream">
+			<option value="">Select One …</option>
+			<option value="chocolate">Chocolate</option>
+			<option value="sardine">Sardine</option>
+			<option value="vanilla">Vanilla</option>
+		</select>
+	</label>
+	<div class="result">
+	abc
+	</div> -->
 	
-	<div class="footer">
+	<script type="text/javascript" src="script.js"></script>
 
-		<h3>&copy; All rights reserved</h3>
-
-	</div>
-
-
-
-
-
-
-
-	</div>
-
-
-
-
-	</body>
-	
+</body> 
+ 
 </html>
-
-
